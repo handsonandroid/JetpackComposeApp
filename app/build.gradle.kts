@@ -49,6 +49,17 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation("androidx.compose.foundation:foundation")
+    implementation("androidx.compose.material:material-icons-extended")
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+    implementation("io.coil-kt:coil-compose:2.6.0")
+    implementation(project(":core:ui"))
+    implementation(project(":core:navigation"))
+    implementation(project(":feature:login"))
+    implementation(project(":feature:onboarding"))
+    //implementation(project(":feature:splash"))
+    implementation(project(":feature:userdetail"))
+    implementation(project(":feature:dashboard"))
 
     // AppCompat and Material
     implementation(libs.androidx.appcompat)
@@ -69,10 +80,4 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     implementation("com.google.firebase:firebase-analytics-ktx")
     // Add more Firebase dependencies as needed
-
-    implementation(project(":feature:login"))
-    implementation("androidx.navigation:navigation-compose:2.7.7")
-    implementation(project(":core:navigation"))
-    implementation(project(":feature:dashboard"))
-    implementation(project(":feature:userdetail"))
 }

@@ -39,4 +39,17 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Compose dependencies for shared UI
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
+    implementation(libs.foundation)
+    implementation(libs.material.icons.extended)
+    implementation(libs.androidx.navigation.compose.v277)
+    implementation(libs.coil.compose.v260)
+    //implementation(project(":core:ui"))
+    implementation(project(":core:navigation"))
 }

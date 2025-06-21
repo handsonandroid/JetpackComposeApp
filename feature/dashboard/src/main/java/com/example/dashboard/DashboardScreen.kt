@@ -14,8 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.example.myapplication.AppPreferences
-import core.ui.components.DashboardCard
-import core.ui.theme.MyComposeAppTheme
+import com.example.ui.components.DashboardCard
+import com.example.ui.theme.MyComposeAppTheme
 import androidx.navigation.NavController
 
 @Composable

@@ -12,9 +12,9 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import core.ui.components.ActionBottomSheet
-import core.ui.components.PrimaryButton
-import core.ui.theme.MyComposeAppTheme
+import com.example.ui.components.ActionBottomSheet
+import com.example.ui.components.PrimaryButton
+import com.example.ui.theme.MyComposeAppTheme
 
 // Sample data class representing user (can be in shared module)
 data class User(

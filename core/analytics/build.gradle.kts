@@ -40,6 +40,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation(libs.firebase.analytics.ktx)
 
 }
