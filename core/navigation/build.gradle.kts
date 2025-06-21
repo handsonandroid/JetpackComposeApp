@@ -52,13 +52,14 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.coil.compose)
-    /*implementation(project(":core:ui"))
-    implementation(project(":core:navigation"))
+    //implementation(project(":core:ui"))
+    //implementation(project(":core:navigation"))
     implementation(project(":feature:login"))
     implementation(project(":feature:onboarding"))
-    implementation(project(":feature:splash"))
+    //implementation(project(":feature:splash"))
     implementation(project(":feature:userdetail"))
-    implementation(project(":feature:dashboard"))*/
+    implementation(project(":feature:dashboard"))
+
     //implementation(project(":app"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

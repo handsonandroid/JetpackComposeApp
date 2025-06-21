@@ -8,11 +8,12 @@ import androidx.compose.material.icons.filled.VisibilityOff
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.*
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.example.myapplication.AppPreferences
+import com.example.common.AppPreferences
 import core.ui.theme.Dimens
 import core.ui.theme.MyComposeAppTheme
 import core.ui.components.PrimaryButton

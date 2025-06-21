@@ -57,7 +57,7 @@ dependencies {
     implementation(project(":core:navigation"))
     implementation(project(":feature:login"))
     implementation(project(":feature:onboarding"))
-    //implementation(project(":feature:splash"))
+    implementation(project(":common"))
     implementation(project(":feature:userdetail"))
     implementation(project(":feature:dashboard"))
 

@@ -1,21 +1,22 @@
 package com.example.onboarding
 
-import android.content.Context
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.pager.HorizontalPager
+import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.example.myapplication.AppPreferences
-import com.google.accompanist.pager.*
+import com.example.common.AppPreferences
 import kotlinx.coroutines.launch
 
-@OptIn(ExperimentalPagerApi::class)
 @Composable
 fun OnboardingScreen(onDone: () -> Unit) {
     val context = LocalContext.current
-    val pagerState = rememberPagerState()
+    //val pagerState = rememberPagerState()
+    val pagerState = rememberPagerState { 10 }
     val scope = rememberCoroutineScope()
 
     fun completeOnboarding() {
@@ -27,7 +28,8 @@ fun OnboardingScreen(onDone: () -> Unit) {
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        HorizontalPager(count = 3, state = pagerState, modifier = Modifier.weight(1f)) { page ->
+        //HorizontalPager(count = 3, state = pagerState, modifier = Modifier.weight(1f)) { page ->
+        HorizontalPager(state = pagerState, modifier = Modifier.weight(1f)) { page ->
             Column(
                 modifier = Modifier.fillMaxSize().padding(32.dp),
                 verticalArrangement = Arrangement.Center,

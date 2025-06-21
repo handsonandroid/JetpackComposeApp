@@ -13,10 +13,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.example.myapplication.AppPreferences
+import com.example.common.AppPreferences
 import com.example.ui.components.DashboardCard
-import com.example.ui.theme.MyComposeAppTheme
 import androidx.navigation.NavController
+import com.example.ui.theme.MyComposeAppTheme
 
 @Composable
 fun DashboardScreen(navController: NavController) {

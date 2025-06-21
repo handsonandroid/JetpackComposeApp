@@ -6,6 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.dashboard.DashboardScreen
 import com.example.login.LoginScreen
 import com.example.onboarding.OnboardingScreen
 import com.example.splash.SplashScreen
@@ -38,7 +39,7 @@ fun AppNavGraph(navController: NavHostController, isFirstLaunch: Boolean, isLogg
             })
         }
         composable(Routes.Login.route) { LoginScreen(navController = navController) }
-        composable(Routes.Dashboard.route) { com.example.dashboard.DashboardScreen(navController = navController) }
+        composable(Routes.Dashboard.route) { DashboardScreen(navController = navController) }
         composable(Routes.UserDetail.route) {
             UserDetailScreen(
                 user = com.example.userdetail.User(

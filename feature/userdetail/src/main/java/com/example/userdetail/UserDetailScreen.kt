@@ -23,6 +23,7 @@ data class User(
     val avatarUrl: String
 )
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun UserDetailScreen(user: User) {
     var showSheet by remember { mutableStateOf(false) }
